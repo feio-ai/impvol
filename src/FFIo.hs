@@ -1,7 +1,8 @@
 {-# LANGUAGE ForeignFunctionInterface #-}
 
+module FFIo(
 
-module FFIo where
+) where
 
 import Foreign.Ptr
 import Foreign.C
@@ -19,4 +20,4 @@ foreign import ccall "lets_be_rational implied_volatility_from_a_transformed_rat
 foreign import ccall "lets_be_rational implied_volatility_from_a_transformed_rational_guess" c_impl_vol_fr_trans_guess :: Double -> Double -> Double -> Double -> Double -> Double
 
 h_black :: Double -> Double -> Double -> Double -> Double -> Double
-h_black s k sig t q = c_black s k sig t q
+h_black = c_black
