@@ -1,6 +1,6 @@
 module Lib
-    ( someFunc
+    ( prompt
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+prompt :: IO ()
+prompt = putStrLn "Necessary Information:\n S, K, sigma, T, r, optiontype"
