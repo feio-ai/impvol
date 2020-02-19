@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ea6b713c70bbe49e6928a320eb7f8151473e38a957df4eba8635956f2054a039
+-- hash: 7d5a32177a63e4c9adf9bdd08916159e2a3ffdecd909727b62ed27d530a8e5d5
 
 name:           impvol
 version:        0.1.0.0
@@ -33,7 +33,7 @@ library
   hs-source-dirs:
       src
   extra-lib-dirs:
-      ${pkgroot}/lib
+      /lib
   extra-libraries:
       lets_be_rational
   build-depends:

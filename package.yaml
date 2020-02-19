@@ -26,7 +26,7 @@ library:
   source-dirs: src
   exposed-modules: Functions.Exp.LBR
   extra-libraries: lets_be_rational
-  extra-lib-dirs: ${pkgroot}/lib
+  extra-lib-dirs: /lib
 
   
 tests:
