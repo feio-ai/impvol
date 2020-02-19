@@ -12,7 +12,6 @@ module Functions.Exp.LBR(
   , normImpVolFromTransformedGuess
   , impVolFromTransformedRationalGuessItr
   , impVolFromTransformedRationalGuess
-  , main
 ) where
 
 import Foreign.Ptr
@@ -30,9 +29,6 @@ foreign import ccall "lets_be_rational normalised_implied_volatility_from_a_tran
 foreign import ccall "lets_be_rational implied_volatility_from_a_transformed_rational_guess_with_limited_iterations" c_impl_vol_fr_trans_guess_ltd :: Double -> Double -> Double -> Double -> Double -> Int -> Double
 foreign import ccall "lets_be_rational implied_volatility_from_a_transformed_rational_guess" c_impl_vol_fr_trans_guess :: Double -> Double -> Double -> Double -> Double -> Double
 
-main :: IO ()
-main = do
-    putStrLn "Test"
 
 setImpVolMaxItr :: Double -> Double
 setImpVolMaxItr = c_set_impl_vol_max_it
