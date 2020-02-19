@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7d5a32177a63e4c9adf9bdd08916159e2a3ffdecd909727b62ed27d530a8e5d5
+-- hash: 74cda414e86b5855fe4d46687dbc743e954fff785887fcf49001fef27b1bc06a
 
 name:           impvol
 version:        0.1.0.0
@@ -32,6 +32,8 @@ library
       Paths_impvol
   hs-source-dirs:
       src
+  include-dirs:
+      lib
   extra-lib-dirs:
       /lib
   extra-libraries:
