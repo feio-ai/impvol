@@ -1,0 +1,52 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: cc25ee9a3ed31af62d6db154b0a9e34ebdea0f426e21e9071b1124674b5fa08a
+
+name:           impvol
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/feio-ai/impvol#readme>
+homepage:       https://github.com/feio-ai/impvol#readme
+bug-reports:    https://github.com/feio-ai/impvol/issues
+author:         Allen VanNoppen
+maintainer:     feioaccel@gmail.com
+copyright:      2020 Allen VanNoppen
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/feio-ai/impvol
+
+library
+  exposed-modules:
+      Functions.Exp.LBR
+  other-modules:
+      Paths_impvol
+  hs-source-dirs:
+      src
+  extra-libraries:
+      lets_be_rational
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite impvol-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_impvol
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , impvol
+  default-language: Haskell2010
