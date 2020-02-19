@@ -24,7 +24,7 @@ dependencies:
 
 library:
   source-dirs: src
-  exposed-modules: Function.Export.LBR
+  exposed-modules: Functions.Exp.LBR
   extra-libraries: lets_be_rational
 
 tests:
