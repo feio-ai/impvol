@@ -27,6 +27,7 @@ library:
   exposed-modules: Functions.Exp.LBR
   extra-libraries: lets_be_rational
   extra-lib-dirs: /lib
+  extra-include-dirs: lib
 
   
 tests:
