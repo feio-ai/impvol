@@ -34,6 +34,9 @@ library
       src
   extra-libraries:
       lets_be_rational
+  include-dirs:
+      lib
+      
   build-depends:
       base >=4.7 && <5
   default-language: Haskell2010

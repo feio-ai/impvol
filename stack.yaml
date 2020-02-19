@@ -59,7 +59,7 @@ packages:
 # arch: x86_64
 #
 # Extra directories used by stack for building
-extra-include-dirs: [/lib]
+# extra-include-dirs: [/lib]
 extra-lib-dirs: [lib]
 #
 # Allow a newer minor version of GHC than the snapshot specifies
