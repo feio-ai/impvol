@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 74cda414e86b5855fe4d46687dbc743e954fff785887fcf49001fef27b1bc06a
+-- hash: dc42d952cb84588fad879bfc213ff2868d7dccc2e45fb36375dfc5457c1bb6f4
 
 name:           impvol
 version:        0.1.0.0
@@ -33,11 +33,14 @@ library
   hs-source-dirs:
       src
   include-dirs:
-      lib
-  extra-lib-dirs:
-      /lib
-  extra-libraries:
-      lets_be_rational
+      lib/Ext
+  install-includes:
+      lib/Ext/lets_be_rational.h
+  c-sources:
+      lib/Ext/erf_cody.cpp
+      lib/Ext/rationalcubic.cpp
+      lib/Ext/normaldistribution.cpp
+      lib/Ext/lets_be_rational.cpp
   build-depends:
       base >=4.7 && <5
   default-language: Haskell2010

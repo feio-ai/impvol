@@ -24,11 +24,16 @@ dependencies:
 
 library:
   source-dirs: src
+  include-dirs: lib/Ext
+  c-sources:
+  - lib/Ext/erf_cody.cpp
+  - lib/Ext/rationalcubic.cpp
+  - lib/Ext/normaldistribution.cpp
+  - lib/Ext/lets_be_rational.cpp
+
+  install-includes: lib/Ext/lets_be_rational.h
+
   exposed-modules: Functions.Exp.LBR
-  extra-libraries: lets_be_rational
-  extra-lib-dirs: /lib
-  include-dirs: lib
- 
 
   
 tests:
